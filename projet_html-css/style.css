@@ -1,3 +1,7 @@
+*{
+    margin:0;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 1em;
@@ -6,6 +10,16 @@ body {
 
 .header, .footer{
     background-color: white;
+    padding: 20px 50px 20px 50px;
+}
+
+section{
+    padding: 80px;
+}
+
+.about{
+    width: 50%;
+    margin: auto;
 }
 
 a {
@@ -17,7 +31,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.important{
+em{
     color: #A5B4FC;
     font-style: normal;
 }
@@ -49,11 +63,21 @@ p, li {
     text-decoration: none;
 }
 
-.description {
+.about_description {
     border-right:  1px solid #a5b4fc;
     border-bottom:  1px solid #a5b4fc;
+    padding: 50px;
+}
+
+.about_description h2{
+    margin-top: 30px;
+}
+
+.about_description ul{
+    margin-top: 30px;
 }
 
 .linkIcon:hover {
     opacity: 0.5;
 }
+
