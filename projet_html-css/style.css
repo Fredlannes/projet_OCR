@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
 }
 
 body {
@@ -32,6 +31,7 @@ h1 {
     font-size: 3.5em;
     color: #A5B4FC;
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 80px;
 }
 
 h2 {
@@ -44,6 +44,7 @@ p, li {
 }
 
 .cta {
+    display: inline-block;
     background: linear-gradient(#8e86b5, #acaeed) ;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -61,6 +62,7 @@ p, li {
     border-right:  1px solid #a5b4fc;
     border-bottom:  1px solid #a5b4fc;
     padding: 50px;
+    margin-bottom: 80px;
 }
 
 .about_description h2{
@@ -71,8 +73,7 @@ p, li {
     margin-top: 30px;
 }
 
-.about_link{
-    padding: 50px;
+.about_description + div{  
     text-align:  center;
 }
 
@@ -105,19 +106,25 @@ nav a{
 
 .main_intro{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    align-items: flex-start;
+    width: 60%;
     margin: auto;
 }
 
-.main_link {
-    margin-top: 50px;
+.main_intro h1{
+    margin-bottom: 15px;
+}
+
+.main_intro p {
+    margin-bottom: 30px;
+}
+.main_intro div {
+    padding-right: 80px;
 }
 
 .project {
-    padding: 80px;
     background-color: #f9f8ff;
+    padding: 80px;
 }
 
 .project h2{
@@ -130,5 +137,59 @@ nav a{
     display: flex;
     gap: 15px;
     justify-content: center;
-    margin-bottom: 15px;
+    margin: 15px;
+}
+
+.portfolio-photo {
+    background-color: #f9f8ff;
+}
+
+.portfolio-photo h2{
+    margin-bottom: 80px;
+    color: #242424;
+}
+
+.grid-paysages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.grid-portrait {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 15px;
+}
+
+.grid-paysages img,
+.grid-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lien-container-photo{
+    position: relative;
+}
+
+.photo-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9f8ff;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    font-size: 1.5em;
+}
+
+.lien-container-photo:hover .photo-hover{
+    display: flex;
 }
